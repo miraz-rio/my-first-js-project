@@ -22,9 +22,11 @@ main {
   color: #48a300;
   text-align: center;
 }
+
 .title span {
   color: #61481c;
 }
+
 .app-container {
   margin-top: 1rem;
   background-color: #fbfbfb;
@@ -34,29 +36,106 @@ main {
   padding: 32px 48px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 }
+
 .sub-title {
   color: #000000;
 }
+
 .sun-icon {
   vertical-align: middle;
   margin-left: 1rem;
 }
+
 .pro-level {
   color: #858585;
   font-size: 14px;
   margin-top: 2rem;
 }
+
 .progress-label {
   margin-top: 1rem;
   height: 30px;
   background: rgba(72, 163, 0, 0.1);
   border-radius: 15px;
 }
+
 .progress-value {
   height: 30px;
-  max-width: 60%;
-  background: #48a300;
+  max-width: 66.66%;
+  background-color: #48a300;
   border-radius: 15px;
+  font-size: 10px;
+  color: #eeffe0;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.error-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  color: #ff5151;
+  margin-block: 1rem;
+}
+
+.goal-container {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.25rem;
+  padding: 0 1rem;
+}
+
+.check-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffffff;
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.goal-input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 1rem;
+  flex-grow: 1;
+  align-self: stretch;
+  /* background-color: #ff5151; */
+}
+
+.goal-input::placeholder {
+  color: #d9d9d9;
+}
+
+.move-one {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: #858585;
 }
 
 @media (max-width: 768px) {
@@ -65,5 +144,19 @@ main {
   }
   .app-container {
     padding: 1rem 2rem;
+  }
+
+  .goal-container {
+    border-radius: 0.75rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+  .check-box {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  .author {
+    margin-top: -1.75rem;
   }
 }
